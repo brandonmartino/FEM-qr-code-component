@@ -122,49 +122,4 @@ body {
     padding-left: 1.06666667em;
     color: #7b879d;
   }
-  #footer {
-    margin-top: 5em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  #footer .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #1f3251;
-  }
-  #footer .container span {
-    display: block;
-    color: #ffffff;
-  }
-  #footer .container a {
-    text-decoration: none;
-    color: #d3d3d3;
-  }
-}
-/* Desktop */
-@media only screen and (min-width: 90em) {
-  #footer .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  #footer .container span {
-    display: block;
-  }
 }
