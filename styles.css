@@ -78,6 +78,8 @@
 body {
   background-color: #d6e2f0;
   font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  margin: 0;
 }
 /*-- -------------------------- -->
 <---          Card              -->
@@ -86,39 +88,83 @@ body {
 @media only screen and (min-width: 0em) {
   #qr-code {
     font-size: inherit;
-    margin-bottom: 18.75px;
+    margin-bottom: 13.33333333em;
   }
   #qr-code .card {
     background-color: #ffffff;
-    border-radius: 1em;
-    width: 18.75em;
+    border-radius: 1.06666667em;
+    width: 20em;
     margin: auto;
-    margin-top: 4.6875em;
-    padding: 1.25em 1.25em 2.1875em 1.25em;
+    margin-top: 5em;
+    padding: 1.33333333em 1.33333333em 2.33333333em 1.33333333em;
   }
   #qr-code picture {
-    width: 18.75em;
+    width: 20em;
     height: 100%;
   }
   #qr-code picture img {
-    width: 18.75em;
+    width: 20em;
     height: 100%;
-    border-radius: 1em;
+    border-radius: 1.06666667em;
   }
   #qr-code .content {
     text-align: center;
-    padding: 0.3125em;
+    padding: 0.33333333em;
   }
   #qr-code .content h2 {
     font-weight: 700;
   }
   #qr-code .content p {
-    font-size: 1em;
+    font-size: 1.06666667em;
     font-weight: 400;
     margin: 0;
-    padding-right: 1em;
-    padding-left: 1em;
+    padding-right: 1.06666667em;
+    padding-left: 1.06666667em;
     color: #7b879d;
   }
+  #footer {
+    margin-top: 5em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  #footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #1f3251;
+  }
+  #footer .container span {
+    display: block;
+    color: #ffffff;
+  }
+  #footer .container a {
+    text-decoration: none;
+    color: #d3d3d3;
+  }
 }
-/* Tablet */
+/* Desktop */
+@media only screen and (min-width: 90em) {
+  #footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #footer .container span {
+    display: block;
+  }
+}
